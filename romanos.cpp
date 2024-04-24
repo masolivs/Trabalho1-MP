@@ -1,6 +1,5 @@
 #include "romanos.hpp"
-int romanos_para_decimal(char const * num_romano)
-{
-  return 0; 
+int converterRomanoParaArabico(const std::string& numeroRomano){
+  return -1; 
 }
  
