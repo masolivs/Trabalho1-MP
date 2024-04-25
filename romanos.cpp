@@ -27,4 +27,3 @@ int converterRomanoParaArabico(const std::string& numeroRomano) {
     }
   return arabico;
 }
- 
