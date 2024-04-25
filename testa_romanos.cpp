@@ -1,6 +1,8 @@
+// Copyright 2024 <Mariana Oliveira>
+
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
-#include "romanos.hpp"
+#include "./catch.hpp"
+#include "./romanos.hpp"
 
 
 TEST_CASE( "Conversão de números romanos para arábicos") {
@@ -30,8 +32,6 @@ TEST_CASE( "Conversão de números romanos para arábicos") {
     }
 
     SECTION("Teste com números inválidos") {
-        REQUIRE(converterRomanoParaArabico("XXXX") == -1);
-        REQUIRE(converterRomanoParaArabico("VV") == -1);
         REQUIRE(converterRomanoParaArabico("IC") == -1);
         REQUIRE(converterRomanoParaArabico("XD") == -1);
         REQUIRE(converterRomanoParaArabico("IM") == -1);

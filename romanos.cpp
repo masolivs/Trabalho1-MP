@@ -1,5 +1,7 @@
-#include "romanos.hpp"
-int converterRomanoParaArabico(const std::string& numeroRomano){
+// Copyright 2024 <Mariana Oliveira>
+#include "./romanos.hpp"
+
+int converterRomanoParaArabico(const std::string& numeroRomano) {
   int arabico = 0;
   int valorAnterior = 0;
 
