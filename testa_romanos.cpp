@@ -33,8 +33,7 @@ TEST_CASE( "Conversão de números romanos para arábicos") {
         REQUIRE(converterRomanoParaArabico("XD") == -1);
         REQUIRE(converterRomanoParaArabico("IM") == -1);
         REQUIRE(converterRomanoParaArabico("IIII") == -1);
-    }
-    
+    } 
 }
 
 
