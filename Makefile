@@ -13,10 +13,9 @@ cpplint: testa_romanos.cpp   romanos.cpp romanos.hpp
 	cpplint   --exclude=catch.hpp  *.*
 	
 gcov: testa_romanos.cpp   romanos.cpp romanos.hpp 
-	g++ -std=c++11 -Wall -Wall -fprofile-arcs -ftest-coverage -c romanos.cpp
-	g++ -std=c++11 -Wall -fprofile-arcs -ftest-coverage romanos.o testa_romanos.cpp -o testa_romanos
+	g++ $(CPPFLAGS) -fprofile-arcs -ftest-coverage romanos.cpp testa_romanos.cpp -o testa_romanos
 	./testa_romanos
-	gcov *.cpp	
+	gcov *.cpp
 	
 debug: testa_romanos.cpp   romanos.cpp romanos.hpp 
 	g++ -std=c++11 -Wall -Wall -g -c romanos.cpp
